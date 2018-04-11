@@ -1,5 +1,15 @@
+/*
+branco: #fdfdfd;
+roxo claro: #815f82;
+roxo medio: #5d2f5f;
+cinza: #b5a4b7;
+roxo escuro: #461048;
+*/
+
 body{
-  width: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #menu{
@@ -8,25 +18,31 @@ body{
   width: inherit;
   top: 0px;
 
-  background-color: #48114A;
-  height: 100px;
-
+  background-color: #461048;
+  height: 18%;
 }
 
 #elementos-menu{
   position: absolute;
-  display: block;
   width: auto;
+  top: 50%;
   left: 50%;
-  margin-left: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.botao-menu, .div-menu{
+  display: inline;
+  width: auto;
+  color: #fff;
 }
 
 .botao-menu{
-  color: #fff;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-family: sans-serif;
-  margin: 10px;
+  margin: 0 1.2em;
+}
 
-  display: inline;
-  width: auto;
+.div-menu{
+  font-size: 2.2em;
+  color: yellow;
 }
