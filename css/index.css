@@ -27,12 +27,13 @@ section{
   left: 50%;
 
   transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 #logomarca-div{
   display: block;
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 80%;
 
   left: 50%;
@@ -41,14 +42,12 @@ section{
 }
 
 #logo-img{
-  width: 25%;
-  margin-right: 2.5%;
+  width: 40%;
 }
 
 #nome-img{
-  width: 40%;
+  width: 55%;
   transform: translateY(-100%);
-  margin-left: 2.5%;
 }
 
 #logo-img, #nome-img{
