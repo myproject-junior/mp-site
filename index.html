@@ -8,8 +8,12 @@
     <meta name="viewport" content="width=device-width">
   </head>
   <body>
-    <nav id="menu">
-      <div id="elementos-menu">
+    <div id="abrir-menu">
+      <button id="botao-abrir-menu">Abrir</button>
+    </div>
+    <header id="menu">
+      <nav id="elementos-menu">
+        <button id="menu-fechar">Fechar</button>
         <a id="servicos-menu" class="botao-menu">Serviços</a>
         <div class="div-menu">|</div>
         <a id="sobre-menu" class="botao-menu">Sobre</a>
@@ -17,17 +21,19 @@
         <a id="calendario-menu" class="botao-menu">Calendário</a>
         <div class="div-menu">|</div>
         <a id="contato-menu" class="botao-menu">Contato</a>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
     <section id="hero-section">
       <div id="logomarca-div">
         <img src="images/logo_mp_2017.png" alt="Logo da empresa" id="logo-img">
         <img src="images/logo_mp_2017_m.png" alt="Marca da empresa" id="nome-img">
       </div>
+      <div id="botao-flutuante">v</div>
     </section>
 
     <section id="servicos-section">
-      <h1 id="servicos-titulo">Serviços</h1>
+      <h1 id="servicos-titulo" class="titulo">Serviços</h1>
       <ul id="servicos-lista">
         <li id="sites-item-lista">Sites empresariais</li>
       </ul>
@@ -35,23 +41,18 @@
       <iframe src="" id="video-servico"></iframe>
     </section>
 
-    <section id="portfolio-section">
-      <h1 id="portfolio-titulo">Portfólio</h1>
-      <!--Section ainda em manutenção-->
-    </section>
-
     <section id="sobre-section">
-      <h1 id="sobre-titulo">Sobre</h1>
+      <h1 id="sobre-titulo" class="titulo">Sobre</h1>
       <!--Section ainda a ser definida-->
     </section>
 
     <section id="calendario-section">
-      <h1 id="calendario-titulo">Calendário</h1>
+      <h1 id="calendario-titulo" class="titulo">Calendário</h1>
       <!--Section ainda a ser definida-->
     </section>
 
     <section id="contato-section">
-      <h1 id="contato-titulo">Contato</h1>
+      <h1 id="contato-titulo" class="titulo">Contato</h1>
       <!--Section ainda a ser definida-->
     </section>
     <script src=""></script>

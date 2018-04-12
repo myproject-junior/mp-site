@@ -10,6 +10,7 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
+  font-size: 1.25em;
 }
 
 img{
@@ -22,38 +23,62 @@ section{
   height: inherit;
 }
 
-#hero-section{
-  top: 50%;
+#abrir-menu{
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #461048;
+}
+
+#botao-flutuante{
+  position: absolute;
+  top: 75%;
   left: 50%;
 
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  font-family: sans-serif;
+  text-align: center;
+
+
+  color: #fff;
+  background-color: #461048;
+}
+
+#hero-section{
+  display: block;
 }
 
 #logomarca-div{
-  display: block;
   position: absolute;
   width: 80%;
-  height: 80%;
+  height: auto;
 
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -60%);
 }
 
 #logo-img{
   width: 40%;
+  vertical-align: middle;
+  margin-right: 1%;
 }
 
 #nome-img{
   width: 55%;
-  transform: translateY(-100%);
+  vertical-align: middle;
+  margin-left: 1%;
 }
 
 #logo-img, #nome-img{
   display: inline-block;
 }
-
 
 #menu{
   position: sticky;
@@ -62,7 +87,8 @@ section{
   top: 0px;
 
   background-color: #461048;
-  height: 18%;
+  height: 100px;
+  z-index: 1;
 }
 
 #elementos-menu{
@@ -80,7 +106,7 @@ section{
 }
 
 .botao-menu{
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: sans-serif;
   margin: 0 1.2em;
 }
@@ -88,4 +114,75 @@ section{
 .div-menu{
   font-size: 2.2em;
   color: yellow;
+}
+
+.titulo{
+  font-size: 3.5em;
+  font-family: sans-serif;
+}
+
+#servicos-section{
+  background-color: #5d2f5f;
+}
+
+#sobre-section{
+  background-color: #fdfdfd;
+}
+
+#calendario-section{
+ background-color: #5d2f5f;
+}
+
+#contato-section{
+  background-color: #fdfdfd;
+}
+
+/* Media Queries */
+@media(max-width: 1110px){
+  body{
+    font-size: 1.10em;
+  }
+}
+
+@media(max-width: 985px){
+  body{
+    font-size: 0.95em;
+  }
+}
+
+@media(max-width: 850px){
+  body{
+    font-size: 0.8em;
+  }
+}
+
+@media(max-width: 720px){
+  /*Mobile version*/
+  .div-menu{
+    display: none;
+  }
+  .botao-menu{
+    display: block;
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+
+  #menu{
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: -70%;
+  }
+
+  .menu-ativo #menu{
+    left: 0;
+  }
+}
+
+@media not all and (max-width: 720px){
+  #menu-abrir,
+  #menu-fechar, #botao-abrir-menu{
+    display: none;
+  }
 }
