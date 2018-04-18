@@ -7,9 +7,9 @@ roxo escuro: #461048;
 */
 
 body{
+  font-family: 'Quicksand', sans-serif;
   position: absolute;
   width: 100%;
-  height: 100%;
   font-size: 1.25em;
 }
 
@@ -18,9 +18,10 @@ img{
 }
 
 section{
+  display: block;
   position: relative;
   width: inherit;
-  height: inherit;
+  height: 82vh;
 }
 
 #botao-flutuante{
@@ -40,10 +41,6 @@ section{
   background-color: #461048;
 }
 
-#hero-section{
-  display: block;
-}
-
 #menu{
   position: sticky;
   display: block;
@@ -51,7 +48,7 @@ section{
   top: 0px;
 
   background-color: #461048;
-  height: 100px;
+  height: 18vh;
   z-index: 1;
 }
 
@@ -60,6 +57,7 @@ section{
 }
 
 #elementos-menu{
+  
   position: absolute;
   width: auto;
   top: 50%;
@@ -75,7 +73,6 @@ section{
 
 .botao-menu{
   font-size: 1em;
-  font-family: sans-serif;
   margin: 0 1.2em;
 }
 
@@ -86,7 +83,9 @@ section{
 
 .titulo{
   font-size: 3.5em;
-  font-family: sans-serif;
+  position: absolute;
+  left: 7%;
+  top: 10%;
 }
 
 #servicos-section{
@@ -106,19 +105,19 @@ section{
 }
 
 /* Media Queries */
-@media(max-width: 1110px){
+@media(max-width: 1130px){
   body{
     font-size: 1.10em;
   }
 }
 
-@media(max-width: 985px){
+@media(max-width: 1000px){
   body{
     font-size: 0.95em;
   }
 }
 
-@media(max-width: 850px){
+@media(max-width: 851px){
   body{
     font-size: 0.8em;
   }
