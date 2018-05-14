@@ -1,9 +1,9 @@
 /* Abrir menu flutuante */
-document.querySelector('#botao-abrir-menu').onclick = function(){
+document.querySelector('.botao-abrir-menu').onclick = function(){
   document.documentElement.classList.add('menu-ativo');
 };
 
-document.querySelector('#botao-fechar-menu').onclick = function(){
+document.querySelector('.botao-fechar-menu').onclick = function(){
   document.documentElement.classList.remove('menu-ativo');
 };
 

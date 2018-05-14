@@ -9,7 +9,6 @@ roxo escuro: #461048;
 /*config gerais*/
 body{
   font-family: 'Quicksand', sans-serif;
-  position: absolute;
   width: 100%;
   font-size: 1.25em;
 }
@@ -27,45 +26,51 @@ section{
 
 /*botao flutuante*/
 .botao-flutuante{
-  position: absolute;
-  top: 75%;
-  left: 50%;
+    position: sticky;
+    z-index: 1;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
 
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 
-  font-family: sans-serif;
-  text-align: center;
+    font-family: sans-serif;
+    text-align: center;
 
+    color: #fff;
+    background-color: #461048;
+}
 
-  color: #fff;
-  background-color: #461048;
+.botao-flutuante p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*barra de navegacaco*/
 .menu{
-  position: sticky;
-  display: block;
-  width: inherit;
-  top: 0px;
-
-  background-color: #461048;
-  height: 18vh;
-  z-index: 1;
-}
-
-.menu-flutuante{
-  background-color: #461048;
+    position: sticky;
+    top: 0;
+    
+    width: inherit;
+    height: 18vh;
+    
+    background-color: #461048;
+    z-index: 1;
 }
 
 .elementos-menu{
-  
-  position: absolute;
-  width: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: run-in;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 560px;
 }
 
 .botao-menu, .div-menu{
@@ -108,62 +113,7 @@ section{
   background-color: #fdfdfd;
 }
 
-/* Media Queries */
-/*
-@media(max-width: 1130px){
-  body{
-    font-size: 1.10em;
-  }
-}
-
-@media(max-width: 1000px){
-  body{
-    font-size: 0.95em;
-  }
-}
-
-@media(max-width: 851px){
-  body{
-    font-size: 0.8em;
-  }
-}
-
-@media(max-width: 720px){
-  /*Mobile version
-  .div-menu{
-    display: none;
-  }
-
-  .botao-menu{
-    display: block;
-    margin: 1em 0;
-    font-size: 1.5em;
-    margin-left: 15%;
-  }
-
-  .menu-flutuante{
-    position: fixed;
-    width: 70%;
-    height: 100%;
-    top: 0;
-    left: -72%;
-    transition: left 0.3s ease-out;
-    box-shadow: 7px 2px 5px rgba(0,0,0,0.4);
-  }
-
-  .menu-ativo .menu-flutuante{
-    left: 0;
-    transform: translate(0, 0);
-  }
-
-  .botao-abrir-menu{
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-  }
-}
-*/
+/*tela maior*/
 @media not all and (max-width: 720px){
   .botao-fechar-menu, .botao-abrir-menu{
     display: none;
@@ -200,4 +150,22 @@ section{
   .logo-img, .nome-img{
     display: inline-block;
   }
+}
+
+/*tela menor*/
+@media(max-width: 720px){
+    section{
+        height: 100vh;
+    }
+    .menu{
+        position: absolute;
+        width: 60%;
+        height: 100vh;
+        left: -60%;
+        transition: left 0.3s ease-out;
+    }
+    .menu-ativo .menu{
+        left: 0;
+    }
+    
 }
