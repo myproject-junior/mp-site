@@ -6,11 +6,11 @@ cinza: #b5a4b7;
 roxo escuro: #461048;
 */
 
+
 /*config gerais*/
 body{
-  font-family: 'Quicksand', sans-serif;
-  width: 100%;
-  font-size: 1.25em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25em;
 }
 
 img{
@@ -50,45 +50,6 @@ section{
     transform: translate(-50%, -50%);
 }
 
-/*barra de navegacaco*/
-.menu{
-    position: sticky;
-    top: 0;
-    
-    width: inherit;
-    height: 18vh;
-    
-    background-color: #461048;
-    z-index: 1;
-}
-
-.elementos-menu{
-    position: absolute;
-    width: auto;
-    height: auto;
-    display: run-in;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 560px;
-}
-
-.botao-menu, .div-menu{
-  display: inline;
-  width: auto;
-  color: #fff;
-}
-
-.botao-menu{
-  font-size: 1em;
-  margin: 0 1.2em;
-}
-
-.div-menu{
-  font-size: 2.2em;
-  color: yellow;
-}
-
 /*config inside sections*/
 .titulo{
   font-size: 3.5em;
@@ -113,19 +74,21 @@ section{
   background-color: #fdfdfd;
 }
 
-/*tela maior*/
-@media not all and (max-width: 720px){
-  .botao-fechar-menu, .botao-abrir-menu{
-    display: none;
-  }
+/*config para ambas as telas*/
+.menu{
+    background-color: #461048;
+    z-index: 2;
+}
 
-  .botao-fechar-menu{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-  }
+.botao-menu{
+    color: #fff;
+}
 
-  .logomarca-div{
+.botao-menu:hover{
+    cursor: pointer;
+}
+
+.logomarca-div{
     position: absolute;
     width: 80%;
     height: auto;
@@ -133,39 +96,121 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
-  }
+}
 
-  .logo-img{
+.logo-img{
     width: 40%;
     vertical-align: middle;
     margin-right: 1%;
-  }
+}
 
-  .nome-img{
+.nome-img{
     width: 55%;
     vertical-align: middle;
     margin-left: 1%;
-  }
+}
 
-  .logo-img, .nome-img{
+.logo-img, .nome-img{
     display: inline-block;
-  }
+}
+
+
+
+/*tela maior*/
+@media not all and (max-width: 720px){
+    /*menu de navegacaco*/
+    .menu{
+        position: sticky;
+        top: 0;
+
+        width: inherit;
+        height: 18vh;
+    }
+
+    .elementos-menu{
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 560px;
+    }
+
+    .botao-menu, .div-menu{
+        display: inline;
+        width: auto;
+    }
+
+    .botao-menu{
+        margin: 0 1.2em;
+    }
+
+    .div-menu{
+        font-size: 2.2em;
+        color: yellow;
+    }    
+    
+    .botao-fechar-menu, .botao-abrir-menu{
+        display: none;
+    }
 }
 
 /*tela menor*/
 @media(max-width: 720px){
+    /*config gerais*/
     section{
         height: 100vh;
     }
+    .botao-abrir-menu{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /*menu de navegacao*/
     .menu{
         position: absolute;
-        width: 60%;
+        width: 40%;
         height: 100vh;
-        left: -60%;
+        left: -40%;
         transition: left 0.3s ease-out;
     }
+    
     .menu-ativo .menu{
         left: 0;
     }
     
+    .div-menu{
+        display: none;
+    }
+    
+    .botao-menu{
+        display: block;
+        padding: 20px;
+        width: auto;
+    }
+    
+    .botao-menu:hover{
+        /*TODO: cor temporaria (AMARELO) (yellow)*/
+        transition: background 0.3s ease-out;
+        background-color: rgba(150, 255, 0, 0.2);
+    }
+    
+    .elementos-menu{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+    .botao-fechar-menu{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
 }
