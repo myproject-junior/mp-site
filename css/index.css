@@ -11,6 +11,7 @@ amarelo: #FCDE01 rgb(252, 222, 1);
 body{
     font-family: 'Quicksand', sans-serif;
     font-size: 1.25em;
+    height: 100%;
 }
 
 img{
@@ -115,6 +116,18 @@ section:nth-child(even){
     border: none;
 }
 
+/*scroll bar*/
+.lista-servicos::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(129, 95, 130, .1);
+    border-radius: 20px;
+}
+
+.lista-servicos::-webkit-scrollbar-thumb{
+    background-color: rgba(129, 95, 130, 1);
+    border-radius: 20px;
+}
+
 /*tela maior*/
 @media not all and (max-width: 720px){
     /*sections*/
@@ -134,7 +147,11 @@ section:nth-child(even){
         width: inherit;
         height: 18vh;
     }
-
+    
+    .titulo-compacto{
+        display: none;
+    }
+    
     .elementos-menu{
         position: absolute;
         width: auto;
@@ -157,7 +174,10 @@ section:nth-child(even){
     .div-menu{
         font-size: 2.2em;
         color: #FCDE01;
-    }    
+    }
+    .div-menu:hover{
+        cursor: default;
+    }
     
     .botao-fechar-menu, .botao-abrir-menu{
         display: none;
@@ -231,7 +251,7 @@ section:nth-child(even){
     .menu{
         position: absolute;
         width: 40%;
-        height: 100vh;
+        height: 100%;
         left: -40%;
         transition: left 0.3s ease-out;
         z-index: 2;
