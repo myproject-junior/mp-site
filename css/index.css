@@ -1,11 +1,11 @@
 /*
-branco: #fdfdfd;
-roxo claro: #815f82;
-roxo medio: #5d2f5f;
-cinza: #b5a4b7;
-roxo escuro: #461048;
+branco: #fdfdfd rgb(253, 253, 253);
+roxo claro: #815f82 rgb(129, 95, 130);
+roxo medio: #5d2f5f rgb(93, 47, 95);
+cinza: #b5a4b7 rgb(181, 164, 183);
+roxo escuro: #461048 rgb(70, 16, 72);
+amarelo: #FCDE01 rgb(252, 222, 1);
 */
-
 
 /*config gerais*/
 body{
@@ -49,19 +49,17 @@ section{
 }
 
 /*config inside sections*/
-.titulo{
-  font-size: 3.5em;
-  position: absolute;
-  left: 7%;
-  top: 10%;
-}
 
 section:nth-child(odd){
-    background-color: #5d2f5f;
+    background-color: #fdfdfd;
 }
 
 section:nth-child(even){
-    background-color: #fdfdfd;
+    background-color: #5d2f5f;
+}
+
+.hero-section{
+    background-color: #fdfdfd !important;
 }
 
 /*config para ambas as telas*/
@@ -82,8 +80,52 @@ section:nth-child(even){
     position: absolute;
 }
 
+/*section servicos*/
+#servicos-titulo{
+    color: #461048;
+}
+
+.item-lista{
+    color: #461048;
+    font-size: 1.2em;
+    background-color: rgba(129, 95, 130, .5);
+    padding: 1%;
+    height: 20%;
+}
+
+.item-lista:hover{
+    color: #FCDE01;
+    background-color: #5d2f5f;
+    transition: background 0.3s ease-out;
+    transition: color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.item-lista + .item-lista{
+    margin-top: .1em;
+}
+
+.lista-servicos{
+    min-width: 210px;
+    max-height: 130px;
+    overflow: auto;
+}
+
+.video-servico{
+    border: none;
+}
+
 /*tela maior*/
 @media not all and (max-width: 720px){
+    /*sections*/
+    .titulo{
+        font-size: 3em;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+    }
+    
     /*menu de navegacaco*/
     .menu{
         position: sticky;
@@ -114,7 +156,7 @@ section:nth-child(even){
 
     .div-menu{
         font-size: 2.2em;
-        color: yellow;
+        color: #FCDE01;
     }    
     
     .botao-fechar-menu, .botao-abrir-menu{
@@ -135,29 +177,75 @@ section:nth-child(even){
         top: 50%;
         transform: translate(-50%, -50%);
     }
+    /*section servicos*/
+    .lista-servicos{
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        width: 235px;
+        height: 130px;  
+    }
+    
+    .video-servico{
+        width: 55%;
+        height: 70%;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
+        margin-left: 1em;
+    }
 }
 
 /*tela menor*/
 @media(max-width: 720px){
     /*config gerais*/
     section{
-        height: 100vh;
+        height: 90vh;
     }
-    .botao-abrir-menu{
-        position: fixed;
-        top: 5%;
-        left: 5%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
+    .titulo{
+      display: none;
     }
     
     /*menu de navegacao*/
+    .titulo-compacto{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        letter-spacing: .2em;
+        font-size: 1.5em;
+        max-height: 9vh;
+        color: #FCDE01;
+    }
+    
+    .botao-abrir-menu{
+        position: absolute;
+        top: 50%;
+        left: 7%;
+        transform: translate(-50%, -50%);
+    }
+    
     .menu{
         position: absolute;
         width: 40%;
         height: 100vh;
         left: -40%;
         transition: left 0.3s ease-out;
+        z-index: 2;
+    }
+    
+    .menu-compacto{
+        position: sticky;
+        top: 0;
+        
+        height: 10vh;
+        width: 100vw;
+        min-width: 490px;
+        background-color: #461048;
+        z-index: 1;
     }
     
     .menu-ativo .menu{
@@ -176,9 +264,8 @@ section:nth-child(even){
     }
     
     .botao-menu:hover{
-        /*TODO: cor temporaria (AMARELO) (yellow)*/
         transition: background 0.3s ease-out;
-        background-color: rgba(150, 255, 0, 0.2);
+        background-color: rgba(252, 222, 1, .2);
     }
     
     .elementos-menu{
@@ -212,5 +299,25 @@ section:nth-child(even){
         left: 50%;
         top: 75%;
         transform: translate(-50%, -50%);
+    }
+    
+    /*section servicos*/
+    .lista-servicos{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 235px;
+        height: 130px;  
+    }
+    
+    .video-servico{
+        width: 80%;
+        height: 50%;
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
     }
 }
