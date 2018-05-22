@@ -86,46 +86,86 @@ section:nth-child(even){
     color: #461048;
 }
 
-.item-lista{
-    color: #461048;
+.servico{
+    position: absolute;
+    width: 18%;
+    min-width: 240px;
+    height: 70%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.nome-servico{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     font-size: 1.2em;
-    background-color: rgba(129, 95, 130, .5);
-    padding: 1%;
-    height: 20%;
+    color: #5d2f5f;
+    
+    z-index: 2;
 }
 
-.item-lista:hover{
-    color: #FCDE01;
-    background-color: #5d2f5f;
-    transition: background 0.3s ease-out;
-    transition: color 0.3s ease-out;
-    cursor: pointer;
+.detalhes-servico{
+    background-color: #fdfdfd;
+    box-shadow: 0 7px 2px rgba(0,0,0,.3);
+    
+    width: 100%;
+    height: 75%;
+    
+    position: relative;
+    left: 50%;
+    top: 0;
+    
+    transform: translate(-50%, -50%);
+    
+    opacity: 0;
+}
+.detalhes-servico:hover{
+    opacity: 1;
+    transition: opacity 0.6s ease-out;
 }
 
-.item-lista + .item-lista{
-    margin-top: .1em;
+
+.descricao-servico{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+    font-size: .8em;
+    color: #815f82;
+    line-height: 1.3em;
 }
 
-.lista-servicos{
-    min-width: 210px;
-    max-height: 130px;
-    overflow: auto;
+.servico1{
+    left: 15%;
 }
 
-.video-servico{
-    border: none;
+.servico2{
+    left: 38%;
 }
 
-/*scroll bar*/
-.lista-servicos::-webkit-scrollbar {
-    width: 12px;
-    background-color: rgba(129, 95, 130, .1);
-    border-radius: 20px;
+.servico3{
+    left: 61%;
 }
 
-.lista-servicos::-webkit-scrollbar-thumb{
-    background-color: rgba(129, 95, 130, 1);
-    border-radius: 20px;
+.servico4{
+    left: 84%;
+}
+
+.imagem-servico{
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    
+    position: relative;
+    
+    background-color: black;
+    z-index: 2;
 }
 
 /*tela maior*/
@@ -134,8 +174,8 @@ section:nth-child(even){
     .titulo{
         font-size: 3em;
         position: absolute;
-        left: 20%;
-        top: 20%;
+        left: 10%;
+        top: 7%;
         transform: translate(-50%, -50%);
     }
     
@@ -198,25 +238,6 @@ section:nth-child(even){
         transform: translate(-50%, -50%);
     }
     /*section servicos*/
-    .lista-servicos{
-        position: absolute;
-        top: 50%;
-        left: 20%;
-        transform: translate(-50%, -50%);
-        width: 235px;
-        height: 130px;  
-    }
-    
-    .video-servico{
-        width: 55%;
-        height: 70%;
-        position: absolute;
-        top: 50%;
-        left: 65%;
-        transform: translate(-50%, -50%);
-        background-color: #000;
-        margin-left: 1em;
-    }
 }
 
 /*tela menor*/
