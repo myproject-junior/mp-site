@@ -248,25 +248,6 @@ section:nth-child(even){
         transform: translate(-50%, -50%);
     }
     /*section servicos*/
-    .lista-servicos{
-        position: absolute;
-        top: 50%;
-        left: 20%;
-        transform: translate(-50%, -50%);
-        width: 235px;
-        height: 130px;  
-    }
-    
-    .video-servico{
-        width: 55%;
-        height: 70%;
-        position: absolute;
-        top: 50%;
-        left: 65%;
-        transform: translate(-50%, -50%);
-        background-color: #000;
-        margin-left: 1em;
-    }
 }
 
 /*tela menor*/
@@ -372,22 +353,5 @@ section:nth-child(even){
     }
     
     /*section servicos*/
-    .lista-servicos{
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 235px;
-        height: 130px;  
-    }
     
-    .video-servico{
-        width: 80%;
-        height: 50%;
-        position: absolute;
-        top: 62%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #000;
-    }
 }
