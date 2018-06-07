@@ -32,16 +32,38 @@
     </section>
 
     <section class="servicos-section">
-      <h1 id="servicos-titulo" class="titulo">Serviços</h1>
-      <ul class="lista-servicos">
-        <li class="item-lista">Sites empresariais</li>
-        <li class="item-lista">Serviço 2</li>
-        <li class="item-lista">Serviço 3</li>
-        <li class="item-lista">Serviço 4</li>
-        <li class="item-lista">Serviço 5</li>
-      </ul>
-      <!--O link do video deve ser dessa forma: https://www.youtube.com/embed/ID_DO_VIDEO?autoplay=1-->
-      <iframe class="video-servico" src="https://www.youtube.com/embed/Q8TXgCzxEnw?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h1 id="servicos-titulo" class="titulo">Serviços</h1>
+            <div class="servico servico1">
+                <div src="" alt="Websites" class="imagem-servico"></div>
+                <p class="nome-servico">Websites</p>
+                <div class="detalhes-servico">
+                    <p class="descricao-servico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices faucibus tempus. Aenean nisl urna.</p>
+                </div>
+            </div>
+
+            <div class="servico servico2">
+                <div src="" alt="Websites" class="imagem-servico"></div>
+                <p class="nome-servico">Aplicativos</p>
+                <div class="detalhes-servico">
+                    <p class="descricao-servico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices faucibus tempus. Aenean nisl urna.</p>
+                </div>
+            </div>
+
+            <div class="servico servico3">
+                <div src="" alt="Websites" class="imagem-servico"></div>
+                <p class="nome-servico">Serviço 1</p>
+                <div class="detalhes-servico">
+                    <p class="descricao-servico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices faucibus tempus. Aenean nisl urna.</p>
+                </div>
+            </div>
+
+            <div class="servico servico4">
+                <div src="" alt="Websites" class="imagem-servico"></div>
+                <p class="nome-servico">Serviço 2</p>
+                <div class="detalhes-servico">
+                    <p class="descricao-servico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices faucibus tempus. Aenean nisl urna.</p>
+                </div>
+            </div>
     </section>
 
     <section class="sobre-section">
