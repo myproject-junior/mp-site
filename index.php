@@ -34,7 +34,7 @@
     <section class="servicos-section">
         <h1 id="servicos-titulo" class="titulo">Serviços</h1>
             <div class="servico servico1">
-                <div src="" alt="Websites" class="imagem-servico"></div>
+                <img src="images/exemplo.jpg" alt="Websites" class="imagem-servico">
                 <p class="nome-servico">Websites</p>
                 <div class="detalhes-servico">
                     <p class="descricao-servico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices faucibus tempus. Aenean nisl urna.</p>
@@ -42,7 +42,7 @@
             </div>
 
             <div class="servico servico2">
-                <div src="" alt="Websites" class="imagem-servico"></div>
+                <img src="images/exemplo.jpg" alt="Websites" class="imagem-servico">
                 <p class="nome-servico">Aplicativos</p>
                 <div class="detalhes-servico">
                     <p class="descricao-servico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices faucibus tempus. Aenean nisl urna.</p>
@@ -50,7 +50,7 @@
             </div>
 
             <div class="servico servico3">
-                <div src="" alt="Websites" class="imagem-servico"></div>
+                <img src="images/exemplo.jpg" alt="Websites" class="imagem-servico">
                 <p class="nome-servico">Serviço 1</p>
                 <div class="detalhes-servico">
                     <p class="descricao-servico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices faucibus tempus. Aenean nisl urna.</p>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="servico servico4">
-                <div src="" alt="Websites" class="imagem-servico"></div>
+                <img src="images/exemplo.jpg" alt="Websites" class="imagem-servico">
                 <p class="nome-servico">Serviço 2</p>
                 <div class="detalhes-servico">
                     <p class="descricao-servico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices faucibus tempus. Aenean nisl urna.</p>
