@@ -185,9 +185,8 @@ section:nth-child(even){
     .titulo{
         font-size: 3em;
         position: absolute;
-        left: 20%;
-        top: 20%;
-        transform: translate(-50%, -50%);
+        left: 5%;
+        top: 3%;
     }
     
     /*menu de navegacaco*/
