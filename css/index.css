@@ -27,13 +27,13 @@ section{
 .botao-flutuante{
     position: fixed;
     z-index: 1;
-    top: 90%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
-    padding-left: 6px;
 
-    width: 30px;
-    height: 30px;
+
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
 	
 	cursor: pointer;
@@ -55,7 +55,12 @@ section{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
+    
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #FCDE01;
 }
 
 /*config inside sections*/
