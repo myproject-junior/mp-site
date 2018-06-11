@@ -250,7 +250,30 @@ section:nth-child(even){
         top: 50%;
         transform: translate(-50%, -50%);
     }
-    /*section servicos*/
+    /*section sobre*/
+    .container{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        width: 45%;
+        height: 70%;
+        overflow-y: scroll; 
+    }
+    
+    .img-sobre{
+        position: absolute;
+        max-width: 100%;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        width: 35%;
+        height: 50%;
+        
+        border: .5em solid #FCDE01;
+    }
 }
 
 /*tela menor*/
@@ -355,6 +378,29 @@ section:nth-child(even){
         transform: translate(-50%, -50%);
     }
     
-    /*section servicos*/
+    /*section sobre*/
+    .container{
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translate(-50%);
+        
+        width: 95%;
+        height: 50%;
+        overflow-y: scroll; 
+    }
+    
+    .img-sobre{
+        position: absolute;
+        max-width: 100%;
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+        
+        width: 65%;
+        height: 32%;
+        
+        border: .5em solid #FCDE01;
+    }
     
 }
