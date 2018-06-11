@@ -99,7 +99,6 @@ section:nth-child(even){
 /*section servicos*/
 #servicos-titulo{
     color: #461048;
-    display: block;
 }
 
 .servico{
