@@ -11,7 +11,7 @@
   <body>
     <header class="menu-compacto">
         <button class="botao-abrir-menu">Menu</button>
-        <p class="titulo-compacto">Titulo</p>
+        <p class="titulo-compacto">Empresa Júnior</p>
     </header>
     <header class="menu">
         <button class="botao-fechar-menu">Fechar</button>
